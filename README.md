@@ -2,20 +2,14 @@
 
 # Word Embeddings
 
-This project explores word embeddings and visualizes them in a 2D space using machine learning techniques like Word2Vec or GloVe. Word embeddings are vector representations of words, capturing semantic meaning based on their usage in text data.
-
-## Features
-- **Word Embedding Generation**: Create high-dimensional vector representations of words.
-- **2D Visualization**: Project word vectors into two dimensions for visualization.
-- **Jupyter Notebook**: The entire process is executed and demonstrated within a Jupyter notebook.
+This project demonstrates how to visualize **pre-trained word embeddings** (Word2Vec, GloVe). Word embeddings capture semantic relationships between words by representing them as vectors in a high-dimensional space. The project provides tools for dimensionality reduction and 2D visualization.
 
 ## Prerequisites
-
 - **Python 3.x**
 - **Jupyter Notebook**
-- **Matplotlib**: For visualization.
-- **Scikit-learn**: For dimensionality reduction (PCA or t-SNE).
-- **Gensim**: For generating word embeddings using models like Word2Vec.
+- **Gensim**
+- **Matplotlib**
+- **Scikit-learn**
 
 ## Installation
 
@@ -25,33 +19,24 @@ This project explores word embeddings and visualizes them in a 2D space using ma
    cd word-embeddings
    ```
 
-2. Install dependencies:
+2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Launch the Jupyter Notebook:
+3. Open and run the Jupyter Notebook:
    ```bash
    jupyter notebook main.ipynb
    ```
 
 ## Usage
 
-The project provides an interactive Jupyter notebook (`main.ipynb`) where you can visualize word embeddings.
-  
-### Dimensionality Reduction and Visualization
+The notebook allows loading pre-trained word embeddings like Word2Vec or GloVe.
 
-- The high-dimensional word vectors are reduced to two dimensions using techniques like PCA or t-SNE, allowing for 2D visualization of semantic word relationships.
-- You can visualize the embeddings and explore how similar words cluster together.
-
-## Example
-
-- Visualize the 2D embeddings:
-  ![Word Embeddings 2D](Word%20Embeddings%202D.png)
-
-## Customization
-
-- You can also experiment with different dimensionality reduction techniques (e.g., PCA vs. t-SNE).
+### Steps:
+1. Load pre-trained embeddings (e.g., Word2Vec).
+2. Use t-SNE or PCA for reducing embedding dimensions to 2D.
+3. Visualize embeddings in 2D, revealing word clusters and relationships.
 
 ## References
 

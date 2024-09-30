@@ -38,6 +38,11 @@ The notebook allows loading pre-trained word embeddings like Word2Vec or GloVe.
 2. Use t-SNE or PCA for reducing embedding dimensions to 2D.
 3. Visualize embeddings in 2D, revealing word clusters and relationships.
 
+### Example:
+
+2D embeddings:
+![Word Embeddings 2D](Word%20Embeddings%202D.png)
+
 ## References
 
 - [Word2Vec Paper](https://arxiv.org/abs/1301.3781)

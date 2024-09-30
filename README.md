@@ -39,8 +39,6 @@ The notebook allows loading pre-trained word embeddings like Word2Vec or GloVe.
 3. Visualize embeddings in 2D, revealing word clusters and relationships.
 
 ### Example:
-
-2D embeddings:
 ![Word Embeddings 2D](Word%20Embeddings%202D.png)
 
 ## References

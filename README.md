@@ -39,6 +39,29 @@ The notebook allows loading pre-trained word embeddings like Word2Vec or GloVe.
 3. Visualize embeddings in 2D, revealing word clusters and relationships.
 
 ### Example:
+```python
+# Load embeddings
+import gensim.downloader as api
+model = api.load('glove-wiki-gigaword-100')
+
+# Perform t-SNE for 2D visualization
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+import numpy as np
+
+words = ['king', 'queen', 'man', 'woman', 'apple', 'orange']
+word_vectors = np.array([model[word] for word in words])  # Convert to NumPy array
+
+tsne = TSNE(n_components=2, perplexity=2)
+word_vectors_2d = tsne.fit_transform(word_vectors)
+
+# Plot the 2D representation
+plt.figure(figsize=(10, 10))
+for i, word in enumerate(words):
+    plt.scatter(word_vectors_2d[i][0], word_vectors_2d[i][1])
+    plt.text(word_vectors_2d[i][0] + 0.05, word_vectors_2d[i][1] + 0.05, word, fontsize=12)
+plt.show()
+```
 ![Word Embeddings 2D](Word%20Embeddings%202D.png)
 
 ## References
